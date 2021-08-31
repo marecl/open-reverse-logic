@@ -169,24 +169,20 @@ Text Notes 7400 3450 0    50   ~ 0
 Text Notes 7850 3450 0    50   ~ 0
 10\n\n9\n\n8\n\n7\n\n6
 Wire Wire Line
-	7350 2750 7200 2750
-Text GLabel 7200 2750 0    50   Input ~ 0
+	7350 2800 7200 2800
+Text GLabel 7200 2800 0    50   Input ~ 0
 B+
 $Comp
 L power:GND #PWR?
 U 1 1 6129630A
-P 8550 2800
-F 0 "#PWR?" H 8550 2550 50  0001 C CNN
-F 1 "GND" H 8555 2627 50  0000 C CNN
-F 2 "" H 8550 2800 50  0001 C CNN
-F 3 "" H 8550 2800 50  0001 C CNN
-	1    8550 2800
+P 9200 2850
+F 0 "#PWR?" H 9200 2600 50  0001 C CNN
+F 1 "GND" H 9205 2677 50  0000 C CNN
+F 2 "" H 9200 2850 50  0001 C CNN
+F 3 "" H 9200 2850 50  0001 C CNN
+	1    9200 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 2750 8550 2750
-Wire Wire Line
-	8550 2750 8550 2800
 Wire Wire Line
 	5750 3350 5750 3550
 Wire Wire Line
@@ -213,10 +209,6 @@ Wire Wire Line
 	5200 2800 5200 2650
 Wire Wire Line
 	5200 2650 6650 2650
-Wire Wire Line
-	6650 2650 6650 2900
-Wire Wire Line
-	6650 2900 7350 2900
 $Comp
 L Moje:PiezoSpeaker3pin LS?
 U 1 1 6129FF7F
@@ -306,23 +298,15 @@ F 3 "" H 6000 5000 50  0001 C CNN
 	1    6000 5000
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	9100 3950 9500 3950
-Wire Notes Line
-	9500 3950 9500 4500
-Wire Notes Line
-	9100 3950 9100 4500
-Wire Notes Line
-	9100 4500 9500 4500
 $Comp
 L Device:R R?
 U 1 1 612A5DDB
-P 9200 3700
-F 0 "R?" H 9131 3654 50  0000 R CNN
-F 1 "670" H 9131 3745 50  0000 R CNN
-F 2 "" V 9130 3700 50  0001 C CNN
-F 3 "~" H 9200 3700 50  0001 C CNN
-	1    9200 3700
+P 9100 3700
+F 0 "R?" H 9031 3654 50  0000 R CNN
+F 1 "670" H 9031 3745 50  0000 R CNN
+F 2 "" V 9030 3700 50  0001 C CNN
+F 3 "~" H 9100 3700 50  0001 C CNN
+	1    9100 3700
 	1    0    0    1   
 $EndComp
 $Comp
@@ -339,46 +323,24 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 612A68BF
-P 9200 4750
-F 0 "R?" H 9131 4704 50  0000 R CNN
-F 1 "120" H 9131 4795 50  0000 R CNN
-F 2 "" V 9130 4750 50  0001 C CNN
-F 3 "~" H 9200 4750 50  0001 C CNN
-	1    9200 4750
+P 8750 4800
+F 0 "R?" H 8681 4754 50  0000 R CNN
+F 1 "120" H 8681 4845 50  0000 R CNN
+F 2 "" V 8680 4800 50  0001 C CNN
+F 3 "~" H 8750 4800 50  0001 C CNN
+	1    8750 4800
 	1    0    0    1   
 $EndComp
-Text GLabel 9600 4700 2    50   Input ~ 0
+Text GLabel 9400 4700 2    50   Input ~ 0
 B+
 Wire Wire Line
-	9600 4700 9400 4700
-Wire Wire Line
-	9400 4700 9400 4500
-Wire Wire Line
-	9200 4600 9200 4500
-Wire Wire Line
-	9200 3850 9200 3950
-Wire Wire Line
-	9400 3850 9400 3950
-Wire Wire Line
-	9200 4900 9200 5000
-Wire Wire Line
-	9200 5000 8350 5000
-Wire Wire Line
-	8350 5000 8350 3850
+	8750 4950 8750 5050
 Wire Wire Line
 	8350 3850 7150 3850
 Wire Wire Line
 	7150 3850 7150 3250
 Wire Wire Line
 	7150 3250 7350 3250
-Wire Wire Line
-	7950 2950 9200 2950
-Wire Wire Line
-	9200 2950 9200 3550
-Wire Wire Line
-	9400 3550 9400 3100
-Wire Wire Line
-	9400 3100 7950 3100
 $Comp
 L Device:R R?
 U 1 1 612AABC1
@@ -600,14 +562,14 @@ Text Notes 3000 2600 0    50   ~ 0
 Mosfet?\n5556A\nSOT-23-5
 Text Notes 7350 2650 0    50   ~ 0
 19A2\nSome custom logic\nTSSOP-10 (?)
-Text Notes 9500 4300 0    50   ~ 0
-Weird (?) dual LEDs\nNeed to investigate further
+Text Notes 9600 4050 0    50   ~ 0
+Three LEDs in 4-pin package\nValid pin-wise
 Text Notes 4300 4450 0    50   ~ 0
 Probably simplest battery charging IC\nB19G\nSOT-23-5\nMCP73831 maybe?
 Text Notes 5300 2550 0    50   ~ 0
 PROBABLY N-Mosfet (no diode drops)\nD05JM\nSOT-23\npinout fits
 Text Notes 7000 4250 0    50   ~ 0
-Never seen this one before\nD:6mm H:2mm
+Never seen this one before\n3 terminal mic: G/-/+\nD:6mm H:2mm
 $Comp
 L Device:C C?
 U 1 1 612DD18D
@@ -637,4 +599,92 @@ F 3 "" H 5400 5300 50  0001 C CNN
 	1    5400 5300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:LED D?
+U 1 1 612E3F2E
+P 9400 4250
+F 0 "D?" V 9347 4330 50  0000 L CNN
+F 1 "ORG" V 9438 4330 50  0000 L CNN
+F 2 "" H 9400 4250 50  0001 C CNN
+F 3 "~" H 9400 4250 50  0001 C CNN
+	1    9400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 612E9797
+P 9100 4250
+F 0 "D?" V 9047 4330 50  0000 L CNN
+F 1 "WHT" V 9138 4330 50  0000 L CNN
+F 2 "" H 9100 4250 50  0001 C CNN
+F 3 "~" H 9100 4250 50  0001 C CNN
+	1    9100 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 612E9A5E
+P 8800 4250
+F 0 "D?" V 8747 4330 50  0000 L CNN
+F 1 "RED" V 8838 4330 50  0000 L CNN
+F 2 "" H 8800 4250 50  0001 C CNN
+F 3 "~" H 8800 4250 50  0001 C CNN
+	1    8800 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 3850 9100 4100
+Wire Wire Line
+	9400 3850 9400 4100
+Wire Wire Line
+	8800 4100 8800 4050
+Wire Wire Line
+	9100 4700 9100 4450
+Wire Wire Line
+	9100 4450 8800 4450
+Wire Wire Line
+	8800 4450 8800 4400
+Wire Wire Line
+	9100 4700 9400 4700
+Wire Wire Line
+	9100 4400 9100 4450
+Connection ~ 9100 4450
+Wire Wire Line
+	9100 4450 9400 4450
+Wire Wire Line
+	9400 4450 9400 4400
+Wire Notes Line
+	8700 3900 9500 3900
+Wire Notes Line
+	9500 3900 9500 4500
+Wire Notes Line
+	9500 4500 8700 4500
+Wire Notes Line
+	8700 4500 8700 3900
+Wire Wire Line
+	7950 2950 9100 2950
+Wire Wire Line
+	9400 3100 7950 3100
+Wire Wire Line
+	9400 3100 9400 3550
+Wire Wire Line
+	9100 3550 9100 2950
+Text Notes 8800 4600 0    50   ~ 0
+Green mark side
+Wire Wire Line
+	8800 4050 8750 4050
+Wire Wire Line
+	8750 4050 8750 4650
+Wire Wire Line
+	8350 3850 8350 5050
+Wire Wire Line
+	8350 5050 8750 5050
+Wire Wire Line
+	7350 2950 6650 2950
+Wire Wire Line
+	6650 2650 6650 2950
+Wire Wire Line
+	7950 2800 9200 2800
+Wire Wire Line
+	9200 2800 9200 2850
 $EndSCHEMATC

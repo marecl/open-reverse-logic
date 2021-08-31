@@ -607,7 +607,7 @@ Probably simplest battery charging IC\nB19G\nSOT-23-5\nMCP73831 maybe?
 Text Notes 5300 2550 0    50   ~ 0
 PROBABLY N-Mosfet (no diode drops)\nD05JM\nSOT-23\npinout fits
 Text Notes 7000 4250 0    50   ~ 0
-Never seen this one before
+Never seen this one before\nD:6mm H:2mm
 $Comp
 L Device:C C?
 U 1 1 612DD18D

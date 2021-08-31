@@ -597,15 +597,15 @@ Connection ~ 3400 3000
 Wire Wire Line
 	3400 3000 3400 3150
 Text Notes 3000 2600 0    50   ~ 0
-Mosfet?\n5556A
+Mosfet?\n5556A\nSOT-23-5
 Text Notes 7350 2650 0    50   ~ 0
-19A2\nSome custom logic
+19A2\nSome custom logic\nTSSOP-10 (?)
 Text Notes 9500 4300 0    50   ~ 0
 Weird (?) dual LEDs\nNeed to investigate further
 Text Notes 4300 4450 0    50   ~ 0
-Probably simplest battery charging IC\nB19G\nMCP73831 maybe?
+Probably simplest battery charging IC\nB19G\nSOT-23-5\nMCP73831 maybe?
 Text Notes 5300 2550 0    50   ~ 0
-PROBABLY N-Mosfet (no diode drops)\nD05JM
+PROBABLY N-Mosfet (no diode drops)\nD05JM\nSOT-23\npinout fits
 Text Notes 7000 4250 0    50   ~ 0
 Never seen this one before
 $Comp
